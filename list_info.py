@@ -17,7 +17,7 @@ if __name__ == '__main__':
         14, 7, 12, 4, 2, 5, 16, 14, 16, 18]
     elements = int(input('Enter an index from 0 to 19 (inclusive): '))
     avg = mean(DATA)
-    if elements in DATA[0:-1]:
+    if 0 <= elements <= len(DATA)-1:
         print(f'The element at index {elements} is {DATA[elements]}.')
         print(f'The sum of elements in DATA is {sum(DATA)}.')
         print(f'The largest value in DATA is {max(DATA)}.')
